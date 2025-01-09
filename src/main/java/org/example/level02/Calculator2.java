@@ -4,44 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator2 {
-    private int num1;
-    private int num2;
-    private char operator;
     private int result;
     private List<Integer> list = new ArrayList<>();
 
     // getter 생성
-    public int getNum1() {
-        return num1;
-    }
-
-    public int getNum2() {
-        return num2;
-    }
-
-    public char getOperator() {
-        return operator;
-    }
-
     public int getResult() {
         return result;
     }
 
     public List<Integer> getList() {
         return list;
-    }
-
-    // setter 생성
-    public void setNum1(int num1) {
-        this.num1 = num1;
-    }
-
-    public void setNum2(int num2) {
-        this.num2 = num2;
-    }
-
-    public void setOperator(char operator) {
-        this.operator = operator;
     }
 
     public int calculate(int num1, int num2, char operator) {
@@ -64,6 +36,7 @@ public class Calculator2 {
                 break;
         }
         list.add(result);
+        System.out.println("결과: " + result);
         return result;
     }
 
